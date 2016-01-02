@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Socket IO Simple example</title>
+    <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+    <style>
+        #players {
+            width: 200px;
+            padding: 5px;
+            background-color: #efefef;
+        }
+
+        #players p {
+            cursor: pointer;
+            background-color: #afafaf;
+            padding: 5px;
+            margin: 0px 0px 5px 0px;
+        }
+
+        .hide {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="lobby">
+        <div id="players">
+            Players: <br><br>
+        </div>
+    </div>
+
+    <div id="game" class="hide">
+        <div id="player1"></div>
+        <div id="player2"></div>
+        <button id="stop">STOP</button>
+    </div>
+
+    <script type="text/javascript" src="client.js"></script>
+</body>
+</html>

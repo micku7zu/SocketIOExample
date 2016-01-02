@@ -44,7 +44,7 @@ io.on('connection', function (socket) {
         socket.player = true;
     } else if (players === 2) {
         socket.player = true;
-        
+
         var array1 = array.slice();
         array1.sort(function() {
             return .5 - Math.random();
